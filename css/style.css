@@ -1,0 +1,339 @@
+/* Roman Gorbunov
+Адаптивность сделал бы иначе, 
+если бы в блоке регистрации 
+не использовалось изображение 
+задним фоном
+ */
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: PT Sans;
+  color: #fff;
+  font-size:14px;
+}
+body{
+  width: 100%;
+  height: 100%;
+   background: url(../img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+.registration{
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: PT Sans;
+  text-align: center;
+  background: url(../img/bg_block.png) no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  margin: 0px auto;
+  padding: 4% 4.4%;
+  min-height: 550px;
+}
+.registration--profressbar{
+  background: url(../img/bg_block_progressbarr.png) no-repeat;
+    -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  text-align: center;
+}
+.registration--fourth-step{
+  background: url(../img/bg_block_step_4.png) no-repeat;
+    -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+.registration__title{
+  font-size:24px;
+  line-height: 24px;
+  color:#fff;
+  margin:0;
+  padding-bottom:5%;
+}
+.registration_warning{
+  font-size:14px;
+  color:#facd0d;
+  border:1px solid #facd0d;
+  padding:2%;
+}
+.registration_warning__fourth-step{
+  font-size:18px;
+}
+.registration__info, .registration__info--third-step, .registration__info--fourth-step{
+  text-align: center;
+  font-size:14px;
+  margin-top:5%;
+}
+.registration__info--third-step{
+  display:inline-block;
+  font-size:18px;
+  margin-top:2%;
+  margin-bottom:6%;
+}
+.registration__info--fourth-step{
+  display: inline-block;
+  margin-bottom: 2%;
+  margin-top: 0;
+  font-size: 18px;
+}
+.line{
+  border-bottom:1px solid #615c58;
+  position:relative;
+  margin-bottom:5%;
+  margin-top: 5%;
+}
+.line--small-margin{
+  margin-bottom:4%;
+  margin-top: 4%;
+}
+.line:before{
+  content:" ";
+  width:22px;
+  height:22px;
+  background:url('../img/question.png') no-repeat;
+  position:absolute;
+  top:-10px;
+  right:47%;
+}
+.registration__question{
+  display: inline-block;
+  width: 86%;
+  font-size:18px;
+  margin-bottom:6%;
+  min-height: 26px;
+}
+.button{
+  color:black;
+  font-size:13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 2px #f9c604;
+  line-height:20px;
+  cursor:pointer;
+  border:none;
+  border-radius: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 3px;
+  position: relative;
+}
+.button--green{
+  background: rgb(179,220,0); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(179,220,0,1) 0%, rgba(95,162,0,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(179,220,0,1)), color-stop(100%,rgba(95,162,0,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(179,220,0,1) 0%,rgba(95,162,0,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(179,220,0,1) 0%,rgba(95,162,0,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(179,220,0,1) 0%,rgba(95,162,0,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(179,220,0,1) 0%,rgba(95,162,0,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dc00', endColorstr='#5fa200',GradientType=0 ); /* IE6-9 */
+  box-shadow: 0px 4px 3px #080605, 0px -3px 0px #ffff00;
+  margin-right: 10px;
+}
+.button--green:active{
+  box-shadow: 0px -3px 0px #ffff00;
+  top:2px;
+}
+.button--red{
+  background: rgb(248,217,97); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(248,217,97,1) 0%, rgba(217,137,52,1) 50%, rgba(206,115,33,1) 65%, rgba(200,82,0,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(248,217,97,1)), color-stop(50%,rgba(217,137,52,1)), color-stop(65%,rgba(206,115,33,1)), color-stop(100%,rgba(200,82,0,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(248,217,97,1) 0%,rgba(217,137,52,1) 50%,rgba(206,115,33,1) 65%,rgba(200,82,0,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(248,217,97,1) 0%,rgba(217,137,52,1) 50%,rgba(206,115,33,1) 65%,rgba(200,82,0,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(248,217,97,1) 0%,rgba(217,137,52,1) 50%,rgba(206,115,33,1) 65%,rgba(200,82,0,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(248,217,97,1) 0%,rgba(217,137,52,1) 50%,rgba(206,115,33,1) 65%,rgba(200,82,0,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8d961', endColorstr='#c85200',GradientType=0 ); /* IE6-9 */
+  box-shadow: 0px 4px 3px #080605, 0px -3px 0px #fefe69;
+  margin-left: 10px;
+}
+.button--red:active{
+  box-shadow: 0px -3px 0px #fefe69;
+  top:2px;
+}
+.button--continue{
+  margin-top: 4%;
+  margin-left: 3%;
+}
+.progressbar__progress {
+  height: 22px; 
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.45) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.45) 50%, rgba(255, 255, 255, 0.45) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.45) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.45) 50%, rgba(255, 255, 255, 0.45) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.45) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.45) 50%, rgba(255, 255, 255, 0.45) 75%, transparent 75%, transparent);
+  -moz-animation: progress-bar-stripes 1s linear infinite;
+  animation: progress-bar-stripes 1s linear infinite;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: #e6160f;
+  background-size: 40px 40px;
+  -webkit-animation: progress-bar-stripes 1s linear infinite;
+  box-shadow: 0px 1px 1px #000, 0px -1px 0px rgba(255, 255, 255, 0.5);
+  width: 88%;
+  margin-left: 6%;
+}
+
+@-webkit-keyframes progress-bar-stripes { 
+  from { background-position: 0 0 }
+  to { background-position: 40px 0 }
+}
+@-moz-keyframes progress-bar-stripes { 
+  from { background-position: 0 0 }
+  to { background-position: 40px 0 }
+}
+@keyframes progress-bar-stripes { 
+  from { background-position: 0 0 }
+  to { background-position: 40px 0 }
+}
+
+
+
+@media screen and (max-width:1279px) and (min-width:1024px){
+  .registration{
+    width: 49%;
+    margin-top: 11%;
+  }
+  .registration__info--third-step{
+    width: 60%;
+  }
+  .registration__info--fourth-step{
+    width: 57%;
+  }
+}
+@media screen and (max-width:1365px) and (min-width:1280px){
+  .registration{
+    width: 38%;
+    margin-top: 13%;
+    padding: 3% 3.5%;
+  }
+  .registration__title{
+    padding-bottom:3%;
+  }
+  .registration__info--third-step{
+    width: 48%;
+  }
+  .registration__info--fourth-step{
+    width: 59%;
+  }
+}
+@media screen and (max-width:1599px) and (min-width:1366px){
+  .registration{
+    width: 35%;
+    margin-top: 8%;
+    padding: 3% 3.5%;
+    padding-top: 2.9%
+  }
+  .registration__info--third-step{
+    width: 68%;
+  }
+  .registration__info--fourth-step{
+    width: 72%;
+  }
+}
+@media screen and (max-width:1919px) and (min-width:1600px){
+  .registration{
+    width: 37%;
+    margin-top: 9%;
+    padding: 3.4% 3.5%;
+  }
+  .registration__title{
+    font-size:30px;
+    padding-bottom:1%;
+  }
+  .registration_warning{
+    padding:3%;
+    margin-top: 3%;
+    font-size: 18px;
+  }
+  .registration__info{
+    margin-top:2%;
+    font-size:18px;
+  }
+  .registration__info--third-step{
+    width: 54%;
+  }
+  .registration__info--fourth-step{
+    font-size:20px;
+  }
+  .line{
+    margin-bottom:4%;
+    margin-top: 4%;
+  }
+  .registration__question{
+    width: 72%;
+    font-size:20px;
+  }
+  .button{
+    font-size:14px;
+    line-height:24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 4px;
+  }
+}
+@media screen and (max-width:2559px) and (min-width:1920px){
+  .registration{
+    width: 32%;
+    margin-top: 8%;
+    padding: 3% 3.5%;
+  }
+  .registration__title{
+    font-size:30px;
+    padding-bottom:1%;
+  }
+  .registration_warning{
+    padding:3%;
+    margin-top: 3%;
+    font-size: 18px;
+  }
+  .registration__info{
+    margin-top:2%;
+    font-size:18px;
+  }
+  .registration__info--third-step{
+    width: 54%;
+  }
+  .registration__info--fourth-step{
+    font-size:20px;
+  }
+  .registration__info--big-font{
+    margin-top: 0;
+  }
+  .line{
+    margin-bottom:4%;
+    margin-top: 4%;
+  }
+  .registration__question{
+    font-size:20px;
+  }
+  .button{
+    font-size:14px;
+    line-height:24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 4px;
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width:2559px) and (min-width:2200px){
+  .registration{
+    width: 30%;
+    min-height: 550px;
+  }
+}
+@media screen and (max-width:3000px) and (min-width:2560px){
+  .registration{
+    width: 28%;
+  }
+}

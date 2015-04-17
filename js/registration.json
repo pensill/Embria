@@ -1,0 +1,22 @@
+{
+  "title" : {
+      "step_1" : "IMPORTANT!",
+      "step_2" : "IMPORTANT!",
+      "step_4" : "Thank you!"
+  },
+  "warning" : {
+      "step_1" : "Before you are allowed to enter the #1 Rated 18+ Game we need to ask a couple of questions.",
+      "step_2" : "Before you are allowed to enter the #1 Rated 18+ Game we need to ask a couple of questions.",
+      "step_4" : "Click on the 'CONTINUE' button  </br>below to start creating the hero."
+  },
+  "info" : {
+      "step_1" : "You're lucky, Free registration is still open . Find out whether you qualify to join the most addicted game by answering 3 simple questions. Good luck!",
+      "step_2" : "You're lucky, Free registration is still open . Find out whether you qualify to join the most addicted game by answering 3 simple questions. Good luck!",
+      "step_3" : "Wait...Checking the answers Checking for open registrations...",
+      "step_4" : "You may Enter the game now. Good Luck!"
+  },
+  "questions" : {
+    "step_1" : "1. Are you over 18 years old?",
+    "step_2" : "2. Most characters look very sexy, and you have to choose a sexy angel to fight with"
+  }
+}
