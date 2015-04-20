@@ -44,7 +44,7 @@ $(document).ready(function() {
                             '<div class="line"></div>' +
                             '<button class="button button--green button--continue">Continue</button>' +
                         '</div>';
-                $('#registration-form').html(step)},300); //setTimeout
+                $('#registration-form').html(step)},3000); //setTimeout
 
         }); // click button_sex_yes
     }); // click button_age_yes
